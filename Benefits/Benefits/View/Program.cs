@@ -15,6 +15,9 @@ namespace Benefits
             CadastrarCliente.RenderRegisterClient();
             ListarClientes.RenderListOfClients();
             Console.ReadKey();
+            RemoverCliente.RenderRemoveClient();
+            ListarClientes.RenderListOfClients();
+            Console.ReadKey();
         }
     }
 }

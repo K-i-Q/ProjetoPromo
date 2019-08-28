@@ -35,5 +35,11 @@ namespace Benefits.Model
             sb.Append(" |");
             return sb.ToString();
         }
+
+        public override bool Equals(object obj) { 
+
+            Cliente c = (Cliente) obj;
+            return Nome == c.Nome;
+        }
     }
 }

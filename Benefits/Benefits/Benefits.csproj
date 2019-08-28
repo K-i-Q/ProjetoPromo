@@ -48,6 +48,7 @@
     <Compile Include="View\ListarClientes.cs" />
     <Compile Include="View\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\RemoverCliente.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

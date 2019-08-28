@@ -29,13 +29,23 @@ namespace Benefits.DAO
         //Remove a Client
         public static void RemoveClient(Cliente cliente)
         {
+            if (Clientes.Contains(FindClient(cliente)))
+            {
+                Clientes.Remove(FindClient(cliente));
+            }
+        }
+
+        //Find a Client
+        public static Cliente FindClient(Cliente cliente)
+        {
             foreach (Cliente c in Clientes)
             {
-                if (Clientes.Contains(cliente))
+                if (c.Equals(cliente))
                 {
-                    Clientes.Remove(c);
+                    return c;
                 }
             }
+            return null;
         }
     }
 }
