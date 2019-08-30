@@ -12,11 +12,8 @@ namespace Benefits.View
     {
         public static void RenderRemoveClient()
         {
-            Cliente cliente = new Cliente();
             Console.WriteLine("Qual nome do cliente que deseja remover? ");
-            cliente.Nome = Console.ReadLine();
-
-            ClienteDAO.RemoveClient(cliente);
+            ClienteDAO.RemoveClient(Console.ReadLine());
         }
     }
 }
