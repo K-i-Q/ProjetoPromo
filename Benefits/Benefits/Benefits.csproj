@@ -54,6 +54,10 @@
     <Compile Include="Migrations\201908300436182_CriarBanco.Designer.cs">
       <DependentUpon>201908300436182_CriarBanco.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908300516338_UpdateTypeGeneroToString.cs" />
+    <Compile Include="Migrations\201908300516338_UpdateTypeGeneroToString.Designer.cs">
+      <DependentUpon>201908300516338_UpdateTypeGeneroToString.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\Context.cs" />
@@ -73,6 +77,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201908300436182_CriarBanco.resx">
       <DependentUpon>201908300436182_CriarBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908300516338_UpdateTypeGeneroToString.resx">
+      <DependentUpon>201908300516338_UpdateTypeGeneroToString.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
