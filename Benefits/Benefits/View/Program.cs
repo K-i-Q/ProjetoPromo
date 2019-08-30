@@ -46,6 +46,10 @@ namespace Benefits
                         Console.WriteLine("Opção inválida");
                         break;
                 }
+
+                Console.WriteLine("Digite qualquer tecla para continuar...");
+                Console.ReadKey();
+                Console.Clear();
             } while (menu != 0);
         }
     }

@@ -15,15 +15,15 @@ namespace Benefits.View
             Cliente cliente = new Cliente();
 
             Console.WriteLine("Digite o nome: ");
-            cliente.Nome = Console.ReadLine();
+            cliente.Nome = Console.ReadLine().ToLower();
             Console.WriteLine("Escolha o genero (m - masculino / f - feminino): ");
-            cliente.Genero = Convert.ToChar(Console.ReadLine());
+            cliente.Genero = Console.ReadLine().ToLower();
             Console.WriteLine("Digite a data de nascimento (Ex: 15/05/1996): ");
-            cliente.DataNascimento = Console.ReadLine();
+            cliente.DataNascimento = Console.ReadLine().ToLower();
             Console.WriteLine("Digite seu e-mail: ");
-            cliente.Email = Console.ReadLine();
+            cliente.Email = Console.ReadLine().ToLower();
             Console.WriteLine("Digite seu telefone (Ex: (41)99561-5900): ");
-            cliente.Telefone = Console.ReadLine();
+            cliente.Telefone = Console.ReadLine().ToLower();
 
             ClienteDAO.RegisterClient(cliente);
         }

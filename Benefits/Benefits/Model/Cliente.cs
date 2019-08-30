@@ -15,7 +15,7 @@ namespace Benefits.Model
         public int ClienteId { get; set; }
         public string Nome { get; set; }
         public string DataNascimento { get; set; }
-        public char Genero { get; set; }
+        public string Genero { get; set; }
         public string Email { get; set; }
         public string Telefone { get; set; }
         public DateTime CriadoEm { get; set; }
@@ -30,14 +30,26 @@ namespace Benefits.Model
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.Append("| ");
+            sb.Append("________________________________________");
+            sb.Append("\n| ");
             sb.Append("Nome: ");
-            sb.Append(Nome);
-            sb.Append("| Gênero: ");
-            sb.Append(Genero);
-            sb.Append("| Email: ");
-            sb.Append(Email);
-            sb.Append(" |");
+            sb.Append(Nome.ToUpper());
+            sb.Append("\n| ");
+            sb.Append("Data Nascimento: ");
+            sb.Append(DataNascimento);
+            sb.Append("\n| ");
+            sb.Append("Genero: ");
+            sb.Append(Genero.ToUpper());
+            sb.Append("\n| ");
+            sb.Append("Email: ");
+            sb.Append(Email.ToUpper());
+            sb.Append("\n| ");
+            sb.Append("Telefone: ");
+            sb.Append(Telefone);
+            sb.Append("\n| ");
+            sb.Append("Cadastrado em: ");
+            sb.Append(CriadoEm);
+            sb.Append("\n| ");
             return sb.ToString();
         }
 

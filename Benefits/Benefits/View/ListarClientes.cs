@@ -15,7 +15,7 @@ namespace Benefits.View
             Console.WriteLine("Listar Clientes");
             foreach (Cliente c in ClienteDAO.ShowClients())
             {
-                Console.WriteLine(c.Nome);
+                Console.WriteLine(c);
             }
         }
     }
