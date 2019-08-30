@@ -9,38 +9,32 @@ namespace Benefits.DAO
 {
     class ClienteDAO
     {
-        public static List<Cliente> Clientes = new List<Cliente>();
+        private static Context ctx = new Context();
 
         //ADD new Client
         public static void RegisterClient(Cliente cliente)
         {
-            Clientes.Add(cliente);
+            ctx.Clientes.Add(cliente);
+            ctx.SaveChanges();
         }
 
         //List all Clients
-        public static void ShowClients()
-        {
-            foreach (Cliente cliente in Clientes)
-            {
-                Console.WriteLine(cliente);
-            }
-        }
+        public static List<Cliente> ShowClients() => ctx.Clientes.ToList();
 
         //Remove a Client
-        public static void RemoveClient(Cliente cliente)
+        public static void RemoveClient(string cliente)
         {
-            if (Clientes.Contains(FindClient(cliente)))
-            {
-                Clientes.Remove(FindClient(cliente));
-            }
+
+            ctx.Clientes.Remove(FindClient(cliente));
+            ctx.SaveChanges();
         }
 
         //Find a Client
-        public static Cliente FindClient(Cliente cliente)
+        public static Cliente FindClient(string cliente)
         {
-            foreach (Cliente c in Clientes)
+            foreach (Cliente c in ShowClients())
             {
-                if (c.Equals(cliente))
+                if (cliente == c.Nome)
                 {
                     return c;
                 }
