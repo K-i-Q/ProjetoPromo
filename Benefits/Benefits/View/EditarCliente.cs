@@ -13,8 +13,7 @@ namespace Benefits.View
         public static void RenderizarEditClient()
         {
             Cliente c = new Cliente();
-
-            Console.WriteLine("Editar Cliente");
+            
             Console.WriteLine("Digite o nome");
             c.Nome = Console.ReadLine().ToLower();
             c = ClienteDAO.FindClient(c);
