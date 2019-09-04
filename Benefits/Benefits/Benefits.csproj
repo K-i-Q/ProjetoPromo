@@ -64,6 +64,9 @@
     <Compile Include="View\CadastrarCliente.cs" />
     <Compile Include="View\EditarCliente.cs" />
     <Compile Include="View\ListarClientes.cs" />
+    <Compile Include="View\MenuClientes.cs" />
+    <Compile Include="View\MenuEmpresas.cs" />
+    <Compile Include="View\MenuPrincipal.cs" />
     <Compile Include="View\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\RemoverCliente.cs" />

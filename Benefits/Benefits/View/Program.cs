@@ -12,46 +12,7 @@ namespace Benefits
         static void Main(string[] args)
         {
 
-            int menu = 0;
-            do
-            {
-                Console.WriteLine("1 - Cadastrar Cliente");
-                Console.WriteLine("2 - Listar Clientes");
-                Console.WriteLine("3 - Remover Cliente");
-                Console.WriteLine("4 - Editar Cliente");
-                Console.WriteLine("0 - Sair");
-                menu = Convert.ToInt32(Console.ReadLine());
-                switch (menu)
-                {
-                    case 1:
-                        //cadastrar
-                        CadastrarCliente.RenderRegisterClient();
-                        break;
-                    case 2:
-                        //listar
-                        ListarClientes.RenderListOfClients();
-                        break;
-                    case 3:
-                        //remover
-                        RemoverCliente.RenderRemoveClient();
-                        break;
-                    case 4:
-                        //editar
-                        EditarCliente.RenderizarEditClient();
-                        break;
-                    case 0:
-                        //saindo
-                        Console.WriteLine("Saindo...");
-                        break;
-                    default:
-                        Console.WriteLine("Opção inválida");
-                        break;
-                }
-
-                Console.WriteLine("Digite qualquer tecla para continuar...");
-                Console.ReadKey();
-                Console.Clear();
-            } while (menu != 0);
+            MenuPrincipal.RenderizarMenuPrincipal();
         }
     }
 }
