@@ -62,6 +62,7 @@
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\Context.cs" />
     <Compile Include="View\CadastrarCliente.cs" />
+    <Compile Include="View\EditarCliente.cs" />
     <Compile Include="View\ListarClientes.cs" />
     <Compile Include="View\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

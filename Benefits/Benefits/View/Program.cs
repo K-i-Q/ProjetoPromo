@@ -37,6 +37,7 @@ namespace Benefits
                         break;
                     case 4:
                         //editar
+                        EditarCliente.RenderizarEditClient();
                         break;
                     case 0:
                         //saindo
