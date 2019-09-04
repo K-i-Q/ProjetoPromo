@@ -27,18 +27,22 @@ namespace Benefits.View
                 {
                     case 1:
                         //cadastrar cliente
+                        Console.WriteLine("Cadastrar Cliente");
                         CadastrarCliente.RenderRegisterClient();
                         break;
                     case 2:
                         //listar clientes
+                        Console.WriteLine("Listar Clientes");
                         ListarClientes.RenderListOfClients();
                         break;
                     case 3:
                         //remover cliente
+                        Console.WriteLine("Remover Cliente");
                         RemoverCliente.RenderRemoveClient();
                         break;
                     case 4:
                         //editar cliente
+                        Console.WriteLine("Editar Cliente");
                         EditarCliente.RenderizarEditClient();
                         break;
                     case 0:

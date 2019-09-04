@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace Benefits.View
 {
-    class ListarClientes
+    class ListarEmpresas
     {
-        public static void RenderListOfClients()
+        public static void RenderListOfCompanies()
         {
-            foreach (Cliente c in ClienteDAO.ShowClients())
+            foreach (Empresa e in EmpresaDAO.ShowCompanies())
             {
-                Console.WriteLine(c);
+                Console.WriteLine(e);
             }
         }
     }

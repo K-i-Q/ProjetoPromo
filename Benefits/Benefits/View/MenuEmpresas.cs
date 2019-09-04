@@ -28,18 +28,22 @@ namespace Benefits.View
                     case 1:
                         //cadastrar empresa
                         Console.WriteLine("Cadastrar empresa");
+                        CadastrarEmpresa.RenderRegisterCompany();
                         break;
                     case 2:
                         //listar empresas
                         Console.WriteLine("Listar empresas");
+                        ListarEmpresas.RenderListOfCompanies();
                         break;
                     case 3:
                         //remover empresa
                         Console.WriteLine("Remover empresa");
+                        RemoverEmpresa.RenderRemoveCompany();
                         break;
                     case 4:
                         //editar empresa
                         Console.WriteLine("Editar empresa");
+                        EditarEmpresa.RenderizarEditCompany();
                         break;
                     case 0:
                         //voltar ao menu principal
