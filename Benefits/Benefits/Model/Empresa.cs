@@ -8,19 +8,17 @@ using System.Threading.Tasks;
 
 namespace Benefits.Model
 {
-    [Table("Clientes")]
-    class Cliente
+    [Table("Empresas")]
+    class Empresa
     {
         [Key]
-        public int ClienteId { get; set; }
+        public int EmpresaId { get; set; }
         public string Nome { get; set; }
-        public string DataNascimento { get; set; }
-        public string Genero { get; set; }
         public string Email { get; set; }
         public string Telefone { get; set; }
         public DateTime CriadoEm { get; set; }
 
-        public Cliente()
+        public Empresa()
         {
             CriadoEm = DateTime.Now;
         }
@@ -34,12 +32,6 @@ namespace Benefits.Model
             sb.Append("\n| ");
             sb.Append("Nome: ");
             sb.Append(Nome.ToUpper());
-            sb.Append("\n| ");
-            sb.Append("Data Nascimento: ");
-            sb.Append(DataNascimento);
-            sb.Append("\n| ");
-            sb.Append("Genero: ");
-            sb.Append(Genero.ToUpper());
             sb.Append("\n| ");
             sb.Append("Email: ");
             sb.Append(Email.ToUpper());
@@ -55,8 +47,8 @@ namespace Benefits.Model
 
         public override bool Equals(object obj)
         {
-            Cliente c = (Cliente)obj;
-            return Nome == c.Nome;
+            Empresa e = (Empresa)obj;
+            return Nome == e.Nome;
         }
     }
 }

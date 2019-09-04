@@ -36,7 +36,7 @@ namespace Benefits.View
                         Console.WriteLine("Saindo...");
                         break;
                     default:
-                        Console.WriteLine("Opção inválida");
+                        Console.WriteLine("Opção " + menu + " inválida");
                         break;
                 }
 
