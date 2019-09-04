@@ -15,5 +15,6 @@ namespace Benefits.Model
 
         }
         public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Empresa> Empresas { get; set; }
     }
 }

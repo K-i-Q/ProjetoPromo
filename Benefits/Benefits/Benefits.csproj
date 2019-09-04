@@ -58,9 +58,14 @@
     <Compile Include="Migrations\201908300516338_UpdateTypeGeneroToString.Designer.cs">
       <DependentUpon>201908300516338_UpdateTypeGeneroToString.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909041735121_AddModelEmpresa.cs" />
+    <Compile Include="Migrations\201909041735121_AddModelEmpresa.Designer.cs">
+      <DependentUpon>201909041735121_AddModelEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\Context.cs" />
+    <Compile Include="Model\Empresa.cs" />
     <Compile Include="View\CadastrarCliente.cs" />
     <Compile Include="View\EditarCliente.cs" />
     <Compile Include="View\ListarClientes.cs" />
@@ -84,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201908300516338_UpdateTypeGeneroToString.resx">
       <DependentUpon>201908300516338_UpdateTypeGeneroToString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909041735121_AddModelEmpresa.resx">
+      <DependentUpon>201909041735121_AddModelEmpresa.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

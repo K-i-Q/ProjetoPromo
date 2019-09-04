@@ -46,7 +46,7 @@ namespace Benefits.View
                         MenuPrincipal.RenderizarMenuPrincipal();
                         break;
                     default:
-                        Console.WriteLine("Opção inválida");
+                        Console.WriteLine("Opção "+menu+" inválida");
                         break;
                 }
 
