@@ -17,10 +17,13 @@ namespace Benefits.Model
         public string Email { get; set; }
         public string Telefone { get; set; }
         public DateTime CriadoEm { get; set; }
+        public List<Cliente> Clientes { get; set; }
+
 
         public Empresa()
         {
             CriadoEm = DateTime.Now;
+            Clientes = new List<Cliente>();
         }
 
 
