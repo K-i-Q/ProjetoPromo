@@ -21,6 +21,7 @@ namespace Benefits.View
                 Console.WriteLine("2 - Listar Clientes");
                 Console.WriteLine("3 - Remover Cliente");
                 Console.WriteLine("4 - Editar Cliente");
+                Console.WriteLine("5 - Contratar Empresa");
                 Console.WriteLine("0 - Voltar ao Menu Principal");
                 menu = Convert.ToInt32(Console.ReadLine());
                 switch (menu)
@@ -44,6 +45,11 @@ namespace Benefits.View
                         //editar cliente
                         Console.WriteLine("Editar Cliente");
                         EditarCliente.RenderizarEditClient();
+                        break;
+                    case 5:
+                        //contratar empresa
+                        Console.WriteLine("Contratar Empresa");
+                        ContratarEmpresa.RenderHireCompany();
                         break;
                     case 0:
                         //voltar ao menu principal
