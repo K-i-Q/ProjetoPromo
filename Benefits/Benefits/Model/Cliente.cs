@@ -54,7 +54,7 @@ namespace Benefits.Model
             sb.Append("\n| ");
             sb.Append("Cadastrado em: ");
             sb.Append(CriadoEm);
-            sb.Append("\n| ");
+            sb.Append("\n|  ");
             sb.Append("Empresas contratadas: ");
             foreach (Empresa e in Empresas)
             {
