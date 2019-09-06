@@ -7,13 +7,13 @@ namespace Benefits.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class AddRelacionamentoClienteEmpresa : IMigrationMetadata
+    public sealed partial class AddRelacionamentoEmpresaCliente : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddRelacionamentoClienteEmpresa));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddRelacionamentoEmpresaCliente));
         
         string IMigrationMetadata.Id
         {
-            get { return "201909050434595_AddRelacionamentoClienteEmpresa"; }
+            get { return "201909060417437_AddRelacionamentoEmpresaCliente"; }
         }
         
         string IMigrationMetadata.Source

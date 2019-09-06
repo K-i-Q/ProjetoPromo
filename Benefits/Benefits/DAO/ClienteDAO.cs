@@ -46,13 +46,5 @@ namespace Benefits.DAO
            ctx.Entry(cliente).State = EntityState.Modified;
            ctx.SaveChanges();
         }
-        //Hire a Company
-        public static void HireCompany(Cliente cliente, Empresa empresa)
-        {
-            EditClient(cliente);
-            EmpresaDAO.EditCompany(empresa);
-        }
-        //List Contractors
-        public static void ShowContractors(Cliente cliente) => cliente.Empresas.ToList();
     }
 }

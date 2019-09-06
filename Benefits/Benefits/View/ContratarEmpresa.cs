@@ -14,6 +14,7 @@ namespace Benefits.View
         {
             Cliente c = new Cliente();
             Empresa e = new Empresa();
+            EmpresaCliente ec = new EmpresaCliente();
 
             Console.WriteLine("Nome do cliente: ");
             c.Nome = Console.ReadLine();
@@ -23,15 +24,12 @@ namespace Benefits.View
             e.Nome = Console.ReadLine();
             e = EmpresaDAO.FindCompany(e);
 
-            c.Empresas.Add(e);
+            ec.ClienteId = c.ClienteId;
+            ec.Cliente = c;
+            ec.EmpresaId = e.EmpresaId;
+            ec.Empresa = e;
 
-            e.Clientes.Add(c);
-
-            //System.InvalidOperationException: 
-            //The property 'EmpresaId' is part of the object's key information and cannot be modified
-
-            ClienteDAO.EditClient(c);
-            EmpresaDAO.EditCompany(e);
+            EmpresaClienteDAO.HireCompany(ec);
         }
     }
 }
