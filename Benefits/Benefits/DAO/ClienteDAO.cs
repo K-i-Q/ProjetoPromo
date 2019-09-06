@@ -10,7 +10,7 @@ namespace Benefits.DAO
 {
     class ClienteDAO
     {
-        private static Context ctx = new Context();
+        private static Context ctx = SingletonContext.GetInstance();
 
         //ADD new Client
         public static void RegisterClient(Cliente cliente)

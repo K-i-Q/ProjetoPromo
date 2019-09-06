@@ -24,13 +24,14 @@ namespace Benefits.View
             e = EmpresaDAO.FindCompany(e);
 
             c.Empresas.Add(e);
+
             e.Clientes.Add(c);
 
             //System.InvalidOperationException: 
             //The property 'EmpresaId' is part of the object's key information and cannot be modified
 
-            //ClienteDAO.EditClient(c);
-            //EmpresaDAO.EditCompany(e);
+            ClienteDAO.EditClient(c);
+            EmpresaDAO.EditCompany(e);
         }
     }
 }

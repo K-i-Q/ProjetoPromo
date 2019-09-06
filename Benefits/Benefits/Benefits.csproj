@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="DAO\ClienteDAO.cs" />
     <Compile Include="DAO\EmpresaDAO.cs" />
+    <Compile Include="DAO\SingletonContext.cs" />
     <Compile Include="Migrations\201908300436182_CriarBanco.cs" />
     <Compile Include="Migrations\201908300436182_CriarBanco.Designer.cs">
       <DependentUpon>201908300436182_CriarBanco.cs</DependentUpon>
