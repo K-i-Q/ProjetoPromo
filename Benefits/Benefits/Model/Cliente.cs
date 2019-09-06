@@ -19,12 +19,12 @@ namespace Benefits.Model
         public string Email { get; set; }
         public string Telefone { get; set; }
         public DateTime CriadoEm { get; set; }
-        public List<Empresa> Empresas { get; set; }
+        public List<EmpresaCliente> EmpresaCliente { get; set; }
 
         public Cliente()
         {
             CriadoEm = DateTime.Now;
-            Empresas = new List<Empresa>();
+            EmpresaCliente = new List<EmpresaCliente>();
         }
 
 
@@ -54,13 +54,7 @@ namespace Benefits.Model
             sb.Append("\n| ");
             sb.Append("Cadastrado em: ");
             sb.Append(CriadoEm);
-            sb.Append("\n| ");
-            sb.Append("Empresas contratadas: ");
-            foreach (Empresa e in Empresas)
-            {
-                sb.Append(e.Nome +" | ");
-            }
-            sb.Append("\n| ");
+            sb.Append("\n|  ");
             return sb.ToString();
         }
 

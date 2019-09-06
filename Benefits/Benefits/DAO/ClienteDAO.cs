@@ -10,7 +10,7 @@ namespace Benefits.DAO
 {
     class ClienteDAO
     {
-        private static Context ctx = new Context();
+        private static Context ctx = SingletonContext.GetInstance();
 
         //ADD new Client
         public static void RegisterClient(Cliente cliente)
@@ -46,13 +46,5 @@ namespace Benefits.DAO
            ctx.Entry(cliente).State = EntityState.Modified;
            ctx.SaveChanges();
         }
-        //Hire a Company
-        public static void HireCompany(Cliente cliente, Empresa empresa)
-        {
-            EditClient(cliente);
-            EmpresaDAO.EditCompany(empresa);
-        }
-        //List Contractors
-        public static void ShowContractors(Cliente cliente) => cliente.Empresas.ToList();
     }
 }

@@ -10,7 +10,7 @@ namespace Benefits.DAO
 {
     class EmpresaDAO
     {
-        private static Context ctx = new Context();
+        private static Context ctx = SingletonContext.GetInstance();
 
         //ADD new Company
         public static void RegisterCompany(Empresa empresa)

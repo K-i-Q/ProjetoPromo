@@ -50,7 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\ClienteDAO.cs" />
+    <Compile Include="DAO\EmpresaClienteDAO.cs" />
     <Compile Include="DAO\EmpresaDAO.cs" />
+    <Compile Include="DAO\SingletonContext.cs" />
     <Compile Include="Migrations\201908300436182_CriarBanco.cs" />
     <Compile Include="Migrations\201908300436182_CriarBanco.Designer.cs">
       <DependentUpon>201908300436182_CriarBanco.cs</DependentUpon>
@@ -63,14 +65,15 @@
     <Compile Include="Migrations\201909041735121_AddModelEmpresa.Designer.cs">
       <DependentUpon>201909041735121_AddModelEmpresa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201909050434595_AddRelacionamentoClienteEmpresa.cs" />
-    <Compile Include="Migrations\201909050434595_AddRelacionamentoClienteEmpresa.Designer.cs">
-      <DependentUpon>201909050434595_AddRelacionamentoClienteEmpresa.cs</DependentUpon>
+    <Compile Include="Migrations\201909060417437_AddRelacionamentoEmpresaCliente.cs" />
+    <Compile Include="Migrations\201909060417437_AddRelacionamentoEmpresaCliente.Designer.cs">
+      <DependentUpon>201909060417437_AddRelacionamentoEmpresaCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\Context.cs" />
     <Compile Include="Model\Empresa.cs" />
+    <Compile Include="Model\EmpresaCliente.cs" />
     <Compile Include="View\CadastrarEmpresa.cs" />
     <Compile Include="View\CadastrarCliente.cs" />
     <Compile Include="View\ContratarEmpresa.cs" />
@@ -78,6 +81,7 @@
     <Compile Include="View\EditarCliente.cs" />
     <Compile Include="View\ListarEmpresas.cs" />
     <Compile Include="View\ListarClientes.cs" />
+    <Compile Include="View\ListarEmpresasContratadas.cs" />
     <Compile Include="View\MenuClientes.cs" />
     <Compile Include="View\MenuEmpresas.cs" />
     <Compile Include="View\MenuPrincipal.cs" />
@@ -103,8 +107,8 @@
     <EmbeddedResource Include="Migrations\201909041735121_AddModelEmpresa.resx">
       <DependentUpon>201909041735121_AddModelEmpresa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201909050434595_AddRelacionamentoClienteEmpresa.resx">
-      <DependentUpon>201909050434595_AddRelacionamentoClienteEmpresa.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201909060417437_AddRelacionamentoEmpresaCliente.resx">
+      <DependentUpon>201909060417437_AddRelacionamentoEmpresaCliente.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
