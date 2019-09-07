@@ -56,7 +56,7 @@ namespace Benefits.View
                         //listar empresas contratadas
                         //WIP show companies hire by client
                         Console.WriteLine("Lista de Empresas Contratadas");
-                        //ListarEmpresasContratadas.RenderShowCompanyHire();
+                        ListarEmpresasContratadas.RenderShowCompanyHire();
                         break;
                     case 0:
                         //voltar ao menu principal

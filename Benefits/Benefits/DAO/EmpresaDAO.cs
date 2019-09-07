@@ -26,7 +26,7 @@ namespace Benefits.DAO
             ctx.Empresas.Remove(FindCompany(empresa));
             ctx.SaveChanges();
         }
-        //Find a Client
+        //Find Company
         public static Empresa FindCompany(Empresa empresa)
         {
             return ctx.Empresas.FirstOrDefault(x => x.Nome.Equals(empresa.Nome));
@@ -39,6 +39,18 @@ namespace Benefits.DAO
             //    }
             //}
             //return null;
+        }
+        //find Company by ID
+        public static Empresa FindCompanyById(int id)
+        {
+            foreach (Empresa empresa in ShowCompanies())
+            {
+                if (empresa.EmpresaId == id)
+                {
+                    return empresa;
+                }
+            }
+            return null;
         }
         //Edit a Company
         public static void EditCompany(Empresa empresa)

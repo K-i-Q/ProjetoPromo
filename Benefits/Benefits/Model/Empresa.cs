@@ -24,6 +24,7 @@ namespace Benefits.Model
         {
             CriadoEm = DateTime.Now;
             EmpresaCliente = new List<EmpresaCliente>();
+            
         }
 
 

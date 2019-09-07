@@ -18,7 +18,21 @@ namespace Benefits.DAO
             ctx.SaveChanges();
         }
 
+        public static List<EmpresaCliente> ShowAllCompanyClient() => ctx.EmpresaCliente.ToList();
+
         //WIP show companies hire by client
-        public static List<EmpresaCliente> ShowContractorsByClient(Cliente c) => ctx.EmpresaCliente.Where(x => x.ClienteId.Equals(c.ClienteId)).ToList();
+        public static void ShowContractorsByClient(Cliente c)
+        {
+            Empresa e = new Empresa();
+
+            foreach (EmpresaCliente empresaCliente in ShowAllCompanyClient())
+            {
+                if (c.ClienteId == empresaCliente.ClienteId)
+                {
+                    e = EmpresaDAO.FindCompanyById(empresaCliente.EmpresaId);
+                    Console.WriteLine(e.Nome);
+                }
+            }
+        }
     }
 }

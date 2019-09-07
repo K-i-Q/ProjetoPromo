@@ -1,4 +1,5 @@
-﻿using Benefits.View;
+﻿using Benefits.Model;
+using Benefits.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
