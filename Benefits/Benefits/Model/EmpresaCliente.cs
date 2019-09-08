@@ -21,8 +21,7 @@ namespace Benefits.Model
         public EmpresaCliente()
         {
             ContratadaEm = DateTime.Now;
-
-            //WIP show companies hire by client
+            
             Cliente = new Cliente();
             Empresa = new Empresa();
         }

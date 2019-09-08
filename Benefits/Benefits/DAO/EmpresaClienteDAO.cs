@@ -20,19 +20,18 @@ namespace Benefits.DAO
 
         public static List<EmpresaCliente> ShowAllCompanyClient() => ctx.EmpresaCliente.ToList();
 
-        //WIP show companies hire by client
-        public static void ShowContractorsByClient(Cliente c)
+        //show companies hire by client
+        public static string ShowContractorsByClient(Cliente c)
         {
-            Empresa e = new Empresa();
-
+            StringBuilder sb = new StringBuilder();
             foreach (EmpresaCliente empresaCliente in ShowAllCompanyClient())
             {
                 if (c.ClienteId == empresaCliente.ClienteId)
                 {
-                    e = EmpresaDAO.FindCompanyById(empresaCliente.EmpresaId);
-                    Console.WriteLine(e.Nome);
+                    sb.Append(EmpresaDAO.FindCompanyById(empresaCliente.EmpresaId).Nome+"\n");
                 }
             }
+            return sb.ToString();
         }
     }
 }

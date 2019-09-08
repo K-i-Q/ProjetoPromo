@@ -20,7 +20,7 @@ namespace Benefits.View
             c.Nome = Console.ReadLine();
             c = ClienteDAO.FindClient(c);
 
-            EmpresaClienteDAO.ShowContractorsByClient(c);
+            Console.WriteLine(EmpresaClienteDAO.ShowContractorsByClient(c));
             
         }
     }
